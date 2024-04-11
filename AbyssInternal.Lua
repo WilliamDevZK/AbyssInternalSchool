@@ -124,3 +124,15 @@ CamLockTabRight:Dropdown({
         print("Value = "..v)
     end
 })
+local TargetLockLeft = AimingTab:Section(
+    "TargetLock", 
+    "Left"
+)
+TargetLockLeft:Toggle({
+    Title = "Enable Target", 
+    Flag = "Toggle_1",
+    Type = "Error",
+    Callback = function(v)
+        print("Value = "..tostring(v))
+    end
+})
